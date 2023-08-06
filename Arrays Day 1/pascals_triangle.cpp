@@ -2,16 +2,16 @@
 using namespace std;
 //VARIATION 1 PRINT THE ELEMENT PRESENT IN NTH ROW AND CTH COLUMN GIVEN N AND C
 // TIME COMPLEXITY O(r)
-int nCr(int n, int r) {
-    long long res = 1;
+    int nCr(int n, int r) {
+        long long res = 1;
 
-    // calculating nCr:
-    for (int i = 0; i < r; i++) {
-        res = res * (n - i);
-        res = res / (i + 1);
+        // calculating nCr:
+        for (int i = 0; i < r; i++) {
+            res = res * (n - i);
+            res = res / (i + 1);
+        }
+        return res;
     }
-    return res;
-}
 //VARIATION TWO PRINT ENTIRE ROW 
 // TIME COMPLEXITY O(N*R)
 void pascalTriangle_row(int n) {
